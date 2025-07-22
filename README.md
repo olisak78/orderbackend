@@ -58,7 +58,7 @@ Replace <your-elastic-password> with the elastic password.
 
 #### Create the orders Index:
 ```
-curl -u elastic:<your-elastic-password> -X PUT "https://localhost:9200/orders" -H "Content-Type: application/json" -d @mappings/orders.json -k
+curl -u elastic:<your-elastic-password> -X PUT "https://localhost:9200/orders" -H "Content-Type: application/json" -d @src/mappings/orders.json -k
 ```
 
 
@@ -90,7 +90,7 @@ curl -u elastic:<your-elastic-password> https://localhost:9200/orders/_search?pr
 
 - src/index.ts: Main server file with Express and Elasticsearch client setup.
 - src/controllers/orderController.ts: Logic for handling order submissions.
-- mappings/orders.json: Elasticsearch index mapping for orders.
+- src/mappings/orders.json: Elasticsearch index mapping for orders.
 - .env: Environment variables (excluded from Git).
 
 ### Notes
