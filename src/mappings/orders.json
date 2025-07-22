@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "properties": {
+      "fullName": { "type": "text" },
+      "address": { "type": "text" },
+      "email": { "type": "keyword" },
+      "shoppingList": {
+        "type": "nested",
+        "properties": {
+          "category": { "type": "keyword" },
+          "product": { "type": "text" },
+          "quantity": { "type": "integer" }
+        }
+      },
+      "createdAt": { "type": "date" }
+    }
+  }
+}
