@@ -75,7 +75,8 @@ The server runs at http://localhost:3001.
 #### Test the Endpoint:
 
 Submit a test order:
-```curl -X POST http://localhost:3001/api/orders -H "Content-Type: application/json" -d "{\"fullName\":\"John Doe\",\"address\":\"123 Main St\",\"email\":\"john@example.com\",\"shoppingList\":[{\"category\":\"Fruits\",\"product\":\"Apples\",\"quantity\":2}]}"
+```
+curl -X POST http://localhost:3001/api/orders -H "Content-Type: application/json" -d "{\"fullName\":\"John Doe\",\"address\":\"123 Main St\",\"email\":\"john@example.com\",\"shoppingList\":[{\"category\":\"Fruits\",\"product\":\"Apples\",\"quantity\":2}]}"
 ```
 
 Expected output: {"message":"Order created successfully"}
