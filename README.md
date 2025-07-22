@@ -80,6 +80,7 @@ curl -X POST http://localhost:3001/api/orders -H "Content-Type: application/json
 ```
 
 Expected output: {"message":"Order created successfully"}
+
 Verify in Elasticsearch:
 ```
 curl -u elastic:<your-elastic-password> https://localhost:9200/orders/_search?pretty -k
